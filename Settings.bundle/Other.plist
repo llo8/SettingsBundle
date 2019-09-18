@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Settings Page Title</key>
+	<string>Настройки</string>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>General Settings</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Name</string>
+			<key>Key</key>
+			<string>settings_name_other</string>
+			<key>DefaultValue</key>
+			<string></string>
+			<key>IsSecure</key>
+			<false/>
+			<key>EmailAddress</key>
+			<string>Alphabet</string>
+			<key>AutocapitalizationType</key>
+			<string>Words</string>
+			<key>AutocorrectionType</key>
+			<string>Default</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Enabled</string>
+			<key>Key</key>
+			<string>settings_toggle_other</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+        <dict>
+            <key>Type</key>
+            <string>PSMultiValueSpecifier</string>
+            <key>Title</key>
+            <string>Выбор</string>
+            <key>Key</key>
+            <string>settings_multi_select_other</string>
+            <key>DefaultValue</key>
+            <string>Value 1</string>
+            <key>Titles</key>
+            <array>
+                <string>Full title 1</string>
+                <string>Full title 2</string>
+            </array>
+            <key>Values</key>
+            <array>
+                <string>Value 1</string>
+                <string>Value 2</string>
+            </array>
+        </dict>
+		<dict>
+			<key>Type</key>
+			<string>PSSliderSpecifier</string>
+			<key>Key</key>
+			<string>settings_slider_other</string>
+			<key>DefaultValue</key>
+			<real>0.5</real>
+			<key>MinimumValue</key>
+			<integer>0</integer>
+			<key>MaximumValue</key>
+			<integer>1</integer>
+			<key>MinimumValueImage</key>
+			<string></string>
+			<key>MaximumValueImage</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+			<key>Title</key>
+			<string>Рекурсия</string>
+			<key>File</key>
+			<string>Other</string>
+		</dict>
+	</array>
+</dict>
+</plist>

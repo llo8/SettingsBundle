@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SettingsBundle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xvv-bx-5PH">
+                                <rect key="frame" x="0.0" y="64" width="375" height="543"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ac0-By-uem">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="NR0-qK-dzr"/>
+                                </constraints>
+                                <state key="normal" title="Settings"/>
+                                <connections>
+                                    <action selector="openSettings" destination="BYZ-38-t0r" eventType="touchUpInside" id="vuQ-WG-Tdd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYU-WX-G8o">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <state key="normal" title="Reload Info"/>
+                                <connections>
+                                    <action selector="reloadInfo" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cpu-8j-KGV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ac0-By-uem" secondAttribute="bottom" id="Ayy-6K-Kll"/>
+                            <constraint firstItem="Ac0-By-uem" firstAttribute="top" secondItem="xvv-bx-5PH" secondAttribute="bottom" id="D3T-7P-RV5"/>
+                            <constraint firstItem="lYU-WX-G8o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Lrh-8m-bHS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xvv-bx-5PH" secondAttribute="trailing" id="R6z-R2-bK7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ac0-By-uem" secondAttribute="trailing" id="RST-DW-hrQ"/>
+                            <constraint firstItem="xvv-bx-5PH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UPl-Vj-SFx"/>
+                            <constraint firstItem="lYU-WX-G8o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nss-qK-nIE"/>
+                            <constraint firstItem="xvv-bx-5PH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="oym-j0-eOM"/>
+                            <constraint firstItem="xvv-bx-5PH" firstAttribute="top" secondItem="lYU-WX-G8o" secondAttribute="bottom" id="sJq-Qo-Hao"/>
+                            <constraint firstItem="Ac0-By-uem" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="slG-9e-5Zb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lYU-WX-G8o" secondAttribute="trailing" id="ukm-e2-6Fy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="text" destination="xvv-bx-5PH" id="lOG-FH-B5b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

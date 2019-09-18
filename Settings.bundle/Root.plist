@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>Title</key>
+	<string>Настройки</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Основные настройки</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Логин</string>
+			<key>Key</key>
+			<string>settings_login</string>
+			<key>DefaultValue</key>
+			<string></string>
+			<key>IsSecure</key>
+			<false/>
+			<key>KeyboardType</key>
+			<string>Alphabet</string>
+			<key>AutocapitalizationType</key>
+			<string>None</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Пароль</string>
+			<key>Key</key>
+			<string>settings_password</string>
+			<key>DefaultValue</key>
+			<string></string>
+			<key>IsSecure</key>
+			<true/>
+			<key>KeyboardType</key>
+			<string>Alphabet</string>
+			<key>AutocapitalizationType</key>
+			<string>None</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Переключатель</string>
+			<key>Key</key>
+			<string>settings_toggle</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSSliderSpecifier</string>
+			<key>Key</key>
+			<string>settings_slider</string>
+			<key>DefaultValue</key>
+			<real>0.5</real>
+			<key>MinimumValue</key>
+			<integer>0</integer>
+			<key>MaximumValue</key>
+			<integer>1</integer>
+			<key>MinimumValueImage</key>
+			<string>speaker_off</string>
+			<key>MaximumValueImage</key>
+			<string>speaker_on</string>
+		</dict>
+        <dict>
+            <key>Type</key>
+            <string>PSMultiValueSpecifier</string>
+            <key>Title</key>
+            <string>Выбор</string>
+            <key>Key</key>
+            <string>settings_multi_select</string>
+            <key>DefaultValue</key>
+            <string></string>
+            <key>Titles</key>
+            <array>
+                <string>Full title 1</string>
+                <string>Full title 2</string>
+            </array>
+            <key>ShortTitles</key>
+            <array>
+                <string>Short Title 1</string>
+                <string>Short Title 2</string>
+            </array>
+            <key>Values</key>
+            <array>
+                <string>Value 1</string>
+                <string>Value 2</string>
+            </array>
+        </dict>
+        <dict>
+            <key>Type</key>
+            <string>PSRadioGroupSpecifier</string>
+            <key>Title</key>
+            <string>Выбор 2</string>
+            <key>Key</key>
+            <string>settings_radio_group</string>
+            <key>DefaultValue</key>
+            <string></string>
+            <key>Titles</key>
+            <array>
+                <string>Full title 1</string>
+                <string>Full title 2</string>
+            </array>
+            <key>Values</key>
+            <array>
+                <string>Value 1</string>
+                <string>Value 2</string>
+            </array>
+        </dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Настройки на отдельном экране</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+			<key>Title</key>
+			<string>Другие настройки</string>
+			<key>File</key>
+			<string>Other</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>cocoapods-acknowledgements</string>
+			<key>FooterText</key>
+			<string>A CocoaPods plugin that generates a plist which includes the installation metadata. It supports generating two styles of dependency information.</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+			<key>Title</key>
+			<string>Acknowledgements</string>
+			<key>File</key>
+			<string>Pods-SettingsBundle-settings-metadata</string>
+		</dict>
+	</array>
+</dict>
+</plist>
